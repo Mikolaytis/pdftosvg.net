@@ -1236,7 +1236,7 @@ namespace PdfToSvg.Drawing
             var imageEl = isStencilMask
                 ? new XElement(ns + "g", imageAttributes,
                     new XElement(ns + "path",
-                        new XAttribute("d", "M0 0V1H1V-1z"),
+                        new XAttribute("d", "M0 0V1H1V0z"),
                         new XAttribute("fill", SvgConversion.FormatColor(graphicsState.FillColor)))
                     )
                 : new XElement(ns + "g", imageAttributes,
